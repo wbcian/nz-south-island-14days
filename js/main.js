@@ -11,7 +11,7 @@ var D = [
     tags: [],
     det: [{ l: "18:30", v: "✈️ NZ78 桃園 → Auckland（機上過夜）" }],
     info: [
-      { icon: "✈️", label: "NZ78 Booking Ref: NN8DLH" },
+      { icon: "✈️", label: "NZ78 桃園 → Auckland 18:30" },
     ],
   },
 
@@ -36,7 +36,7 @@ var D = [
       { l: "晚上", v: "🍽️ Riverside Market 或超市採買" },
     ],
     info: [
-      { icon: "✈️", label: "NZ543 Ref: 2DI6QH" },
+      { icon: "✈️", label: "NZ543 Auckland → Christchurch 13:00" },
       { icon: "🚗", label: "Ezi 取車 17:00", sub: "訂單 628108565｜⛽ 柴油 DIESEL（黑色幫浦）" },
       { icon: "🏨", label: "Golden Hotel", sub: "229 Riccarton Rd｜📞 +64 33599188｜NZD 422.4 當天現付" },
       { icon: "🍽️", label: "Riverside Market", url: "https://www.google.com/maps/search/?api=1&query=Riverside+Market+Christchurch", sub: "河邊市集，多元美食" },
@@ -353,7 +353,7 @@ var D = [
     info: [
       { icon: "⛽", label: "BP Russley Rd（還車前加滿）", url: "https://www.google.com/maps/search/?api=1&query=BP+Russley+Road+Christchurch&query_place_id=ChIJXVTwYK70MW0RzEiO2fE705w", sub: "24hr，近機場，海外卡可用" },
       { icon: "🚗", label: "Ezi 還車 11:30", sub: "CHC Airport，Novotel 後方停車場" },
-      { icon: "✈️", label: "NZ554 Ref: 2DI6QH", sub: "13:00 CHC → AKL" },
+      { icon: "✈️", label: "NZ554 Christchurch → Auckland 13:00" },
       { icon: "🏨", label: "JetPark Auckland Airport", url: "https://www.google.com/maps/search/?api=1&query=JetPark+Auckland+Airport&query_place_id=ChIJfU5sqJlPDW0RR8ciVCBjIOw", sub: "63 Westney Rd, Māngere｜免費 Shuttle" },
     ],
   },
@@ -373,7 +373,7 @@ var D = [
       { l: "17:05", v: "🏠 抵達桃園 — 歡迎回家！" },
     ],
     info: [
-      { icon: "✈️", label: "NZ77 Ref: NN8DLH", sub: "09:40 AKL → TPE（11.5hr）" },
+      { icon: "✈️", label: "NZ77 Auckland → Taipei 09:40", sub: "飛行約 11.5hr" },
     ],
   },
 ];
@@ -541,10 +541,10 @@ chapters.forEach(function (ch, ci) {
 
 /* ── Info panel toggle ── */
 mainEl.addEventListener("click", function (e) {
-  var toggle = e.target.closest(".day-toggle");
-  if (toggle) {
-    e.stopPropagation();
-    var entry = toggle.closest(".day-entry");
+  if (e.target.closest("a")) return;
+  if (e.target.closest(".day-info-panel")) return;
+  var entry = e.target.closest(".day-entry");
+  if (entry && entry.querySelector(".day-info-panel")) {
     entry.classList.toggle("open");
   }
 });
