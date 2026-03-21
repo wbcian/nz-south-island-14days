@@ -67,7 +67,7 @@ var D = [
     ],
     info: [
       { icon: "🏨", label: "Rainforest Motel ✅", sub: "Fox Glacier｜NZD 387.21 已付" },
-      { icon: "⛽", label: "NPD Hokitika (24hr)", url: "https://www.google.com/maps/place/?q=place_id:ChIJG803aGsvL20Rr9wUBaK2jsA", sub: "必加滿油！過後油價貴 20–30分/L" },
+      { icon: "⛽", label: "NPD Hokitika (24hr)", url: "https://www.google.com/maps/search/?api=1&query=NPD+Hokitika&query_place_id=ChIJG803aGsvL20Rr9wUBaK2jsA", sub: "必加滿油！過後油價貴 20–30分/L" },
       { icon: "📡", label: "今晚下載離線地圖", sub: "Fox Glacier → Wanaka 全段（明天約4hr全程無訊號）" },
     ],
   },
@@ -95,8 +95,8 @@ var D = [
     ],
     info: [
       { icon: "🧊", label: "Fox Glacier Guiding ✅", sub: "08:30 集合｜約 4hr｜爸媽可去 Lake Matheson" },
-      { icon: "🏨", label: "Marina Terrace", url: "https://www.google.com/maps/place/?q=place_id:ChIJS-a9UuFP1akRWCOq35ngxgs", sub: "65 Lakeside Rd, Wanaka" },
-      { icon: "🍽️", label: "Kai Kikokiko", url: "https://www.google.com/maps/place/?q=place_id:ChIJBZbXK1NP1akROjJMgx6Wms0", sub: "16–20:30，週三休" },
+      { icon: "🏨", label: "Marina Terrace", url: "https://www.google.com/maps/search/?api=1&query=Marina+Terrace+Wanaka&query_place_id=ChIJS-a9UuFP1akRWCOq35ngxgs", sub: "65 Lakeside Rd, Wanaka" },
+      { icon: "🍽️", label: "Kai Kikokiko", url: "https://www.google.com/maps/search/?api=1&query=Kai+Kikokiko+Wanaka&query_place_id=ChIJBZbXK1NP1akROjJMgx6Wms0", sub: "16–20:30，週三休" },
       { icon: "⛽", label: "Haast 加油站（應急）", sub: "油量低於半箱才補，價格偏高" },
     ],
   },
@@ -124,7 +124,7 @@ var D = [
       { l: "18:00", v: "🍽️ Bistro Gentil 晚餐", c: "hl" },
     ],
     info: [
-      { icon: "🏨", label: "Marina Terrace（續住）", url: "https://www.google.com/maps/place/?q=place_id:ChIJS-a9UuFP1akRWCOq35ngxgs" },
+      { icon: "🏨", label: "Marina Terrace（續住）", url: "https://www.google.com/maps/search/?api=1&query=Marina+Terrace+Wanaka&query_place_id=ChIJS-a9UuFP1akRWCOq35ngxgs" },
       { icon: "🍽️", label: "Bistro Gentil ✅", url: "https://maps.app.goo.gl/dLt2wKLjP1irvciu6", sub: "18:00 晚餐" },
     ],
   },
@@ -150,8 +150,8 @@ var D = [
       { l: "16:00", v: "🚡 Gondola 纜車 + Luge 溜溜車 🌅", c: "hl" },
     ],
     info: [
-      { icon: "🏨", label: "LakeRidge Queenstown", url: "https://www.google.com/maps/place/?q=place_id:ChIJ80FKHn4d1akROuKJJyeUkpY", sub: "51 Thompson St｜Check-in 15:00" },
-      { icon: "⛽", label: "NPD Frankton 加滿油", url: "https://www.google.com/maps/place/?q=place_id:ChIJpZLBPFEe1akRqKakG-EnnmY", sub: "比 Wanaka 便宜約 10分/L" },
+      { icon: "🏨", label: "LakeRidge Queenstown", url: "https://www.google.com/maps/search/?api=1&query=LakeRidge+Queenstown&query_place_id=ChIJ80FKHn4d1akROuKJJyeUkpY", sub: "51 Thompson St｜Check-in 15:00" },
+      { icon: "⛽", label: "NPD Frankton 加滿油", url: "https://www.google.com/maps/search/?api=1&query=NPD+Frankton&query_place_id=ChIJpZLBPFEe1akRqKakG-EnnmY", sub: "比 Wanaka 便宜約 10分/L" },
       { icon: "🍔", label: "Fergburger ⚠️ 需電話預約" },
     ],
   },
@@ -178,7 +178,7 @@ var D = [
     ],
     info: [
       { icon: "🚤", label: "Shotover Jet ✅ 已付款", sub: "10:00 出發" },
-      { icon: "🏨", label: "LakeRidge Queenstown（續住）", url: "https://www.google.com/maps/place/?q=place_id:ChIJ80FKHn4d1akROuKJJyeUkpY" },
+      { icon: "🏨", label: "LakeRidge Queenstown（續住）", url: "https://www.google.com/maps/search/?api=1&query=LakeRidge+Queenstown&query_place_id=ChIJ80FKHn4d1akROuKJJyeUkpY" },
     ],
   },
 
@@ -205,8 +205,8 @@ var D = [
     ],
     info: [
       { icon: "🍽️", label: "Rata Restaurant ✅", sub: "Ref: 69693936｜📞 +643-4429393｜⚠️ 12hr 內取消 = $100/人" },
-      { icon: "🏨", label: "LakeRidge Queenstown（續住）", url: "https://www.google.com/maps/place/?q=place_id:ChIJ80FKHn4d1akROuKJJyeUkpY" },
-      { icon: "☕", label: "Odd Saint 早餐", url: "https://www.google.com/maps/place/?q=place_id:ChIJA8EbBLEd1akRJbkD-mmn_lA" },
+      { icon: "🏨", label: "LakeRidge Queenstown（續住）", url: "https://www.google.com/maps/search/?api=1&query=LakeRidge+Queenstown&query_place_id=ChIJ80FKHn4d1akROuKJJyeUkpY" },
+      { icon: "☕", label: "Odd Saint 早餐", url: "https://www.google.com/maps/search/?api=1&query=Odd+Saint+Queenstown&query_place_id=ChIJA8EbBLEd1akRJbkD-mmn_lA" },
       { icon: "📡", label: "今晚下載離線地圖", sub: "Queenstown → Mt. Cook 全段（Lindis Pass 斷訊）" },
     ],
   },
@@ -236,8 +236,8 @@ var D = [
       { l: "晚上", v: "🌟 Mt. Cook 暗空保護區看星星" },
     ],
     info: [
-      { icon: "🏨", label: "The Lakes Motel Twizel", url: "https://www.google.com/maps/place/?q=place_id:ChIJEcBsq-IfK20RxoNUCErWkF8", sub: "10 MacKenzie Dr, Twizel｜復活節 Mt. Cook 已滿" },
-      { icon: "⛽", label: "McKeown 24/7 Twizel", url: "https://www.google.com/maps/place/?q=place_id:ChIJh9wxRfwfK20RIodAfo9kTco", sub: "24hr 自助，價格低｜Mt. Cook 無加油站" },
+      { icon: "🏨", label: "The Lakes Motel Twizel", url: "https://www.google.com/maps/search/?api=1&query=The+Lakes+Motel+Twizel&query_place_id=ChIJEcBsq-IfK20RxoNUCErWkF8", sub: "10 MacKenzie Dr, Twizel｜復活節 Mt. Cook 已滿" },
+      { icon: "⛽", label: "McKeown 24/7 Twizel", url: "https://www.google.com/maps/search/?api=1&query=McKeown+Petroleum+Twizel&query_place_id=ChIJh9wxRfwfK20RIodAfo9kTco", sub: "24hr 自助，價格低｜Mt. Cook 無加油站" },
       { icon: "🍒", label: "Jackson Orchard", url: "https://www.google.com/maps/search/Jackson+Orchard+Cromwell", sub: "Cromwell 果園，冰淇淋必吃" },
     ],
   },
@@ -265,7 +265,7 @@ var D = [
     ],
     info: [
       { icon: "🛶", label: "Glacier Explorers ✅ 已付款", url: "https://maps.app.goo.gl/9XM1K45QgKTkXUQo7", sub: "09:45 出發" },
-      { icon: "🏨", label: "Great Scott", url: "https://www.google.com/maps/place/?q=place_id:ChIJw0djCgR1K20RoS6UG2eGfzg", sub: "34 Scott St, Lake Tekapo" },
+      { icon: "🏨", label: "Great Scott", url: "https://www.google.com/maps/search/?api=1&query=Great+Scott+Lake+Tekapo&query_place_id=ChIJw0djCgR1K20RoS6UG2eGfzg", sub: "34 Scott St, Lake Tekapo" },
     ],
   },
 
@@ -296,7 +296,7 @@ var D = [
     ],
     info: [
       { icon: "🌟", label: "變色龍觀星團 ✅", sub: "21:45 場次｜已報名" },
-      { icon: "🏨", label: "Great Scott（續住）", url: "https://www.google.com/maps/place/?q=place_id:ChIJw0djCgR1K20RoS6UG2eGfzg" },
+      { icon: "🏨", label: "Great Scott（續住）", url: "https://www.google.com/maps/search/?api=1&query=Great+Scott+Lake+Tekapo&query_place_id=ChIJw0djCgR1K20RoS6UG2eGfzg" },
       { icon: "📡", label: "今晚下載離線地圖", sub: "Lake Tekapo → Christchurch（Burkes Pass 小段斷訊）" },
     ],
   },
@@ -325,7 +325,7 @@ var D = [
       { l: "晚上", v: "🧳 收拾打包" },
     ],
     info: [
-      { icon: "🏨", label: "Bella Vista Motel", url: "https://www.google.com/maps/place/?q=place_id:ChIJY5Xl3y2KMW0Rh4_fGGaOsY0", sub: "193 Bealey Ave, Christchurch" },
+      { icon: "🏨", label: "Bella Vista Motel", url: "https://www.google.com/maps/search/?api=1&query=Bella+Vista+Motel+Christchurch&query_place_id=ChIJY5Xl3y2KMW0Rh4_fGGaOsY0", sub: "193 Bealey Ave, Christchurch" },
     ],
   },
 
@@ -345,10 +345,10 @@ var D = [
       { l: "16:00", v: "JetPark Check-in（免費機場 Shuttle）" },
     ],
     info: [
-      { icon: "⛽", label: "BP Russley Rd（還車前加滿）", url: "https://www.google.com/maps/place/?q=place_id:ChIJXVTwYK70MW0RzEiO2fE705w", sub: "24hr，近機場，海外卡可用" },
+      { icon: "⛽", label: "BP Russley Rd（還車前加滿）", url: "https://www.google.com/maps/search/?api=1&query=BP+Russley+Road+Christchurch&query_place_id=ChIJXVTwYK70MW0RzEiO2fE705w", sub: "24hr，近機場，海外卡可用" },
       { icon: "🚗", label: "Ezi 還車 11:30", sub: "CHC Airport，Novotel 後方停車場" },
       { icon: "✈️", label: "NZ554 Ref: 2DI6QH", sub: "13:00 CHC → AKL" },
-      { icon: "🏨", label: "JetPark Auckland Airport", url: "https://www.google.com/maps/place/?q=place_id:ChIJfU5sqJlPDW0RR8ciVCBjIOw", sub: "63 Westney Rd, Māngere｜免費 Shuttle" },
+      { icon: "🏨", label: "JetPark Auckland Airport", url: "https://www.google.com/maps/search/?api=1&query=JetPark+Auckland+Airport&query_place_id=ChIJfU5sqJlPDW0RR8ciVCBjIOw", sub: "63 Westney Rd, Māngere｜免費 Shuttle" },
     ],
   },
 
