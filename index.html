@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no"
+      content="width=device-width, initial-scale=1.0"
     />
     <title>紐西蘭南島 14 天行程</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;900&family=Noto+Serif+TC:wght@700;900&display=swap" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -17,10 +20,14 @@
       <p class="hero-sub">2026.03.28 – 04.10</p>
 
       <div class="route-map">
-        <img
-          src="img/route-map.png"
-          alt="紐西蘭南島自駕路線圖"
-        />
+        <picture>
+          <source srcset="img/route-map.webp" type="image/webp" />
+          <img
+            src="img/route-map.png"
+            alt="紐西蘭南島自駕路線圖"
+            fetchpriority="high"
+          />
+        </picture>
       </div>
 
       <div class="stats-row">
@@ -42,11 +49,11 @@
     </section>
 
     <nav class="nav-wrap" id="navW">
-      <button class="nav-tab active" data-ch="0">序</button>
-      <button class="nav-tab" data-ch="1">西海岸</button>
-      <button class="nav-tab" data-ch="2">皇后鎮</button>
-      <button class="nav-tab" data-ch="3">山湖</button>
-      <button class="nav-tab" data-ch="4">歸</button>
+      <button class="nav-tab active">序</button>
+      <button class="nav-tab">西海岸</button>
+      <button class="nav-tab">皇后鎮</button>
+      <button class="nav-tab">山湖</button>
+      <button class="nav-tab">歸</button>
       <div class="nav-ind" id="navInd"></div>
     </nav>
 
@@ -64,11 +71,11 @@
         </ul>
       </div>
       <div class="legend">
-        <span class="tag tag-n">自然景觀</span
-        ><span class="tag tag-a">活動體驗</span
-        ><span class="tag tag-f">美食推薦</span
-        ><span class="tag tag-c">人文歷史</span
-        ><span class="tag tag-s">星空觀測</span>
+        <span class="tag tag-n">自然景觀</span>
+        <span class="tag tag-a">活動體驗</span>
+        <span class="tag tag-f">美食推薦</span>
+        <span class="tag tag-c">人文歷史</span>
+        <span class="tag tag-s">星空觀測</span>
       </div>
       <div class="ftr-txt">
         南島逆時針環狀路線<br />Christchurch 出發 & 回程

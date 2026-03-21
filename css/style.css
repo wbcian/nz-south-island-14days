@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;900&family=Noto+Serif+TC:wght@700;900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -242,7 +240,7 @@ body {
 
 /* ── Chapter ── */
 .chapter {
-  padding: 0 0 16px;
+  padding: 0 8px 16px;
   max-width: 640px;
   margin: 0 auto;
 }
@@ -255,7 +253,7 @@ body {
   width: 40px;
   height: 2px;
   background: var(--hint);
-  margin: 0 auto 0;
+  margin: 0 auto;
   border-radius: 2px;
 }
 .ch-hdr {
@@ -351,7 +349,7 @@ body {
   opacity: 0.6;
   border-radius: 16px 16px 0 0;
 }
-.type-flight::before { opacity: 1; }
+.type-flight::before { height: 3px; opacity: 0.9; }
 .type-stargazing::before { opacity: 0; }
 @media (prefers-color-scheme: dark) {
   .day-entry {
@@ -535,10 +533,6 @@ body {
 .type-flight {
   background: linear-gradient(160deg, color-mix(in srgb, var(--ch-color) 6%, var(--card)), var(--card));
 }
-.type-flight::before {
-  height: 3px;
-  opacity: 0.9;
-}
 @media (prefers-color-scheme: dark) {
   .type-flight {
     background: linear-gradient(160deg, color-mix(in srgb, var(--ch-color) 10%, var(--card)), var(--card));
@@ -660,13 +654,13 @@ body {
 .ftr {
   max-width: 640px;
   margin: 0 auto;
-  padding: 0 12px;
+  padding: 0 20px;
 }
 .note-box {
   background: var(--card);
   border: 1px solid var(--card-b);
   border-radius: 16px;
-  padding: 20px 20px;
+  padding: 20px;
   margin-top: 40px;
   font-size: 14px;
   color: var(--mid);

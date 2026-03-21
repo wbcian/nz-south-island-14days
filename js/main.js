@@ -121,7 +121,7 @@ var D = [
       { t: "Willow Tree", c: "n" },
     ],
     det: [
-      { l: "09:30", v: "🌳 Frankton Willow Tree「最孤獨的樹」" },
+      { l: "09:30", v: "🌳 Tekapo Willow Tree 「最孤獨的樹」" },
       { l: "11:30", v: "🍔 Fergburger — 皇后鎮必吃漢堡！", c: "hl" },
       { l: "12:30", v: "🛒 超市採購（有亞洲超市）" },
       { l: "15:00", v: "Check-in 放行李" },
@@ -209,14 +209,14 @@ var D = [
     title: "冰河探索 → Lake Tekapo",
     loc: "🏨 Great Scott, Lake Tekapo（住 2 晚）",
     drv: "~1hr",
-    heroAct: "🛶 Glacier Explorers 冰河湖泛舟！",
+    heroAct: "🛶 Glacier Explorers 冰川船！",
     tags: [
       { t: "🛶 Glacier Explorers", c: "a" },
       { t: "⛪ 善牧人教堂", c: "c" },
       { t: "🌟 星空", c: "s" },
     ],
     det: [
-      { l: "09:45", v: "🛶 Glacier Explorers 冰河湖泛舟！", c: "hl" },
+      { l: "09:45", v: "🛶 Glacier Explorers 冰川船！", c: "hl" },
       { l: "13:30", v: "🚗 前往 Lake Tekapo" },
       { l: "下午", v: "⛪ 善牧人教堂 + 湖邊散步" },
       { l: "晚上", v: "🌟 暗空保護區觀星 — 世界級星空！" },
@@ -348,26 +348,16 @@ var chapters = [
   },
 ];
 
-var chColors = [
-  "var(--ch1)",
-  "var(--ch2)",
-  "var(--ch3)",
-  "var(--ch4)",
-  "var(--ch5)",
-];
 var mainEl = document.getElementById("main");
 
 chapters.forEach(function (ch, ci) {
   var sec = document.createElement("section");
   sec.className = "chapter";
   sec.id = "ch-" + ci;
+  sec.style.setProperty("--ch-color", ch.color);
   var html =
-    '<div class="ch-hdr" data-anim style="--ch-color:' +
-    ch.color +
-    '">' +
-    '<span class="ch-num" style="color:' +
-    ch.color +
-    '">Ch.' +
+    '<div class="ch-hdr" data-anim>' +
+    '<span class="ch-num">Ch.' +
     (ci + 1) +
     "</span>" +
     '<span class="ch-title">' +
@@ -402,13 +392,7 @@ chapters.forEach(function (ch, ci) {
       .join("");
     var heroA =
       day.type === "adventure" && day.heroAct
-        ? '<div class="hero-act" style="border-color:' +
-          ch.color +
-          ";--ch-color:" +
-          ch.color +
-          '">' +
-          day.heroAct +
-          "</div>"
+        ? '<div class="hero-act">' + day.heroAct + "</div>"
         : "";
     var starsH = "";
     if (day.type === "stargazing") {
@@ -430,14 +414,10 @@ chapters.forEach(function (ch, ci) {
       day.type +
       '" data-anim style="transition-delay:' +
       idx * 0.07 +
-      "s;--ch-color:" +
-      ch.color +
-      '">' +
+      's">' +
       starsH +
       '<div class="day-head">' +
-      '<span class="day-badge" style="background:' +
-      ch.color +
-      '">' +
+      '<span class="day-badge">' +
       day.d +
       "（" +
       day.wd +
@@ -449,9 +429,7 @@ chapters.forEach(function (ch, ci) {
       day.title +
       "</div>" +
       (day.loc ? '<div class="day-loc">' + day.loc + "</div>" : "") +
-      (day.drv
-        ? '<div class="day-drive">🚗 約 ' + day.drv + "</div>"
-        : "") +
+      (day.drv ? '<div class="day-drive">🚗 約 ' + day.drv + "</div>" : "") +
       "</div>" +
       "</div>" +
       heroA +
@@ -477,7 +455,7 @@ function setInd(i) {
     w = navW.getBoundingClientRect();
   ind.style.left = r.left - w.left + "px";
   ind.style.width = r.width + "px";
-  document.documentElement.style.setProperty("--ch-color", chColors[i]);
+  document.documentElement.style.setProperty("--ch-color", chapters[i].color);
   curCh = i;
 }
 requestAnimationFrame(function () {
@@ -527,21 +505,25 @@ document.querySelectorAll("[data-anim]").forEach(function (el) {
   anim.observe(el);
 });
 
-/* ── Progress bar ── */
+/* ── Progress bar + Back to top (single throttled scroll handler) ── */
 var pbar = document.getElementById("pbar");
+var btt = document.getElementById("btt");
 var tick = false;
 window.addEventListener("scroll", function () {
   if (!tick) {
     requestAnimationFrame(function () {
       var s = window.scrollY,
         h = document.documentElement.scrollHeight - window.innerHeight;
-      pbar.style.width =
-        h > 0 ? Math.min((s / h) * 100, 100) + "%" : "0%";
+      pbar.style.width = h > 0 ? Math.min((s / h) * 100, 100) + "%" : "0%";
+      btt.classList.toggle("show", s > 500);
       tick = false;
     });
     tick = true;
   }
 });
+btt.onclick = function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
 
 /* ── Number counter ── */
 function countUp(el, target, dur) {
@@ -556,15 +538,14 @@ function countUp(el, target, dur) {
   }
   requestAnimationFrame(step);
 }
+var statNums = document.querySelectorAll(".stat-num[data-target]");
 var sObs = new IntersectionObserver(
   function (es) {
     es.forEach(function (e) {
       if (e.isIntersecting) {
-        document
-          .querySelectorAll(".stat-num[data-target]")
-          .forEach(function (el) {
-            countUp(el, +el.dataset.target, 1400);
-          });
+        statNums.forEach(function (el) {
+          countUp(el, +el.dataset.target, 1400);
+        });
         sObs.unobserve(e.target);
       }
     });
@@ -573,15 +554,6 @@ var sObs = new IntersectionObserver(
 );
 var sr = document.querySelector(".stats-row");
 if (sr) sObs.observe(sr);
-
-/* ── Back to top ── */
-var btt = document.getElementById("btt");
-window.addEventListener("scroll", function () {
-  btt.classList.toggle("show", window.scrollY > 500);
-});
-btt.onclick = function () {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-};
 
 /* ── Resize ── */
 window.addEventListener("resize", function () {
