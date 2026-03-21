@@ -210,7 +210,7 @@ var D = [
     heroAct: "🛶 Glacier Explorers 冰川船！",
     tags: [
       { t: "🛶 Glacier Explorers", c: "a" },
-      { t: "⛪ 善牧人教堂", c: "c" },
+      { t: "⛪ 牧人教堂", c: "c" },
       { t: "🌟 星空", c: "s" },
     ],
     det: [
