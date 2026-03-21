@@ -39,6 +39,7 @@ var D = [
       { icon: "✈️", label: "NZ543 Ref: 2DI6QH" },
       { icon: "🚗", label: "Ezi 取車 17:00", sub: "訂單 628108565｜⛽ 柴油 DIESEL（黑色幫浦）" },
       { icon: "🏨", label: "Golden Hotel", sub: "229 Riccarton Rd｜📞 +64 33599188｜NZD 422.4 當天現付" },
+      { icon: "🍽️", label: "Riverside Market", url: "https://www.google.com/maps/search/?api=1&query=Riverside+Market+Christchurch", sub: "河邊市集，多元美食" },
       { icon: "📡", label: "今晚下載離線地圖", sub: "Christchurch → Hokitika（明天 Arthur's Pass 無訊號）" },
     ],
   },
@@ -125,6 +126,7 @@ var D = [
     ],
     info: [
       { icon: "🏨", label: "Marina Terrace（續住）", url: "https://www.google.com/maps/search/?api=1&query=Marina+Terrace+Wanaka&query_place_id=ChIJS-a9UuFP1akRWCOq35ngxgs" },
+      { icon: "☕", label: "Curbside Coffee & Bagels", url: "https://www.google.com/maps/search/?api=1&query=Curbside+Coffee+Bagels+Wanaka", sub: "早餐外帶上山" },
       { icon: "🍽️", label: "Bistro Gentil ✅", url: "https://maps.app.goo.gl/dLt2wKLjP1irvciu6", sub: "18:00 晚餐" },
     ],
   },
@@ -152,7 +154,7 @@ var D = [
     info: [
       { icon: "🏨", label: "LakeRidge Queenstown", url: "https://www.google.com/maps/search/?api=1&query=LakeRidge+Queenstown&query_place_id=ChIJ80FKHn4d1akROuKJJyeUkpY", sub: "51 Thompson St｜Check-in 15:00" },
       { icon: "⛽", label: "NPD Frankton 加滿油", url: "https://www.google.com/maps/search/?api=1&query=NPD+Frankton&query_place_id=ChIJpZLBPFEe1akRqKakG-EnnmY", sub: "比 Wanaka 便宜約 10分/L" },
-      { icon: "🍔", label: "Fergburger ⚠️ 需電話預約" },
+      { icon: "🍔", label: "Fergburger ⚠️ 需電話預約", url: "https://www.google.com/maps/search/?api=1&query=Fergburger+Queenstown" },
     ],
   },
 
@@ -204,7 +206,7 @@ var D = [
       { l: "17:30", v: "🍽️ Rata Restaurant 晚餐（5 位）", c: "hl" },
     ],
     info: [
-      { icon: "🍽️", label: "Rata Restaurant ✅", sub: "Ref: 69693936｜📞 +643-4429393｜⚠️ 12hr 內取消 = $100/人" },
+      { icon: "🍽️", label: "Rata Restaurant ✅", url: "https://www.google.com/maps/search/?api=1&query=Rata+Restaurant+Queenstown", sub: "Ref: 69693936｜📞 +643-4429393｜⚠️ 12hr 內取消 = $100/人" },
       { icon: "🏨", label: "LakeRidge Queenstown（續住）", url: "https://www.google.com/maps/search/?api=1&query=LakeRidge+Queenstown&query_place_id=ChIJ80FKHn4d1akROuKJJyeUkpY" },
       { icon: "☕", label: "Odd Saint 早餐", url: "https://www.google.com/maps/search/?api=1&query=Odd+Saint+Queenstown&query_place_id=ChIJA8EbBLEd1akRJbkD-mmn_lA" },
       { icon: "📡", label: "今晚下載離線地圖", sub: "Queenstown → Mt. Cook 全段（Lindis Pass 斷訊）" },
@@ -238,7 +240,8 @@ var D = [
     info: [
       { icon: "🏨", label: "The Lakes Motel Twizel", url: "https://www.google.com/maps/search/?api=1&query=The+Lakes+Motel+Twizel&query_place_id=ChIJEcBsq-IfK20RxoNUCErWkF8", sub: "10 MacKenzie Dr, Twizel｜復活節 Mt. Cook 已滿" },
       { icon: "⛽", label: "McKeown 24/7 Twizel", url: "https://www.google.com/maps/search/?api=1&query=McKeown+Petroleum+Twizel&query_place_id=ChIJh9wxRfwfK20RIodAfo9kTco", sub: "24hr 自助，價格低｜Mt. Cook 無加油站" },
-      { icon: "🍒", label: "Jackson Orchard", url: "https://www.google.com/maps/search/Jackson+Orchard+Cromwell", sub: "Cromwell 果園，冰淇淋必吃" },
+      { icon: "🐟", label: "High Country Salmon", url: "https://www.google.com/maps/search/?api=1&query=High+Country+Salmon+Twizel", sub: "新鮮生鮭魚，路過必停" },
+      { icon: "🍒", label: "Jackson Orchard", url: "https://www.google.com/maps/search/?api=1&query=Jackson+Orchard+Cromwell", sub: "Cromwell 果園，冰淇淋必吃" },
     ],
   },
 
@@ -297,6 +300,7 @@ var D = [
     info: [
       { icon: "🌟", label: "變色龍觀星團 ✅", sub: "21:45 場次｜已報名" },
       { icon: "🏨", label: "Great Scott（續住）", url: "https://www.google.com/maps/search/?api=1&query=Great+Scott+Lake+Tekapo&query_place_id=ChIJw0djCgR1K20RoS6UG2eGfzg" },
+      { icon: "☕", label: "Astro Cafe", url: "https://www.google.com/maps/search/?api=1&query=Astro+Cafe+Mt+John+Lake+Tekapo", sub: "Mt. John 山頂，景色絕美" },
       { icon: "📡", label: "今晚下載離線地圖", sub: "Lake Tekapo → Christchurch（Burkes Pass 小段斷訊）" },
     ],
   },
@@ -326,6 +330,8 @@ var D = [
     ],
     info: [
       { icon: "🏨", label: "Bella Vista Motel", url: "https://www.google.com/maps/search/?api=1&query=Bella+Vista+Motel+Christchurch&query_place_id=ChIJY5Xl3y2KMW0Rh4_fGGaOsY0", sub: "193 Bealey Ave, Christchurch" },
+      { icon: "🥧", label: "Fairlie Bakery", url: "https://www.google.com/maps/search/?api=1&query=Fairlie+Bakehouse", sub: "必吃 Porkbelly 肉派" },
+      { icon: "🍽️", label: "Riverside Market", url: "https://www.google.com/maps/search/?api=1&query=Riverside+Market+Christchurch", sub: "午餐" },
     ],
   },
 
