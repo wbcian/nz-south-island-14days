@@ -10,6 +10,9 @@ var D = [
     drv: "",
     tags: [],
     det: [{ l: "18:30", v: "✈️ NZ78 桃園 → Auckland（機上過夜）" }],
+    info: [
+      { icon: "✈️", label: "NZ78 Booking Ref: NN8DLH" },
+    ],
   },
 
   {
@@ -31,6 +34,12 @@ var D = [
       { l: "14:25", v: "抵達 Christchurch" },
       { l: "15:30", v: "取車、前往飯店" },
       { l: "晚上", v: "🍽️ Riverside Market 或超市採買" },
+    ],
+    info: [
+      { icon: "✈️", label: "NZ543 Ref: 2DI6QH" },
+      { icon: "🚗", label: "Ezi 取車 17:00", sub: "訂單 628108565｜⛽ 柴油 DIESEL（黑色幫浦）" },
+      { icon: "🏨", label: "Golden Hotel", sub: "229 Riccarton Rd｜📞 +64 33599188｜NZD 422.4 當天現付" },
+      { icon: "📡", label: "今晚下載離線地圖", sub: "Christchurch → Hokitika（明天 Arthur's Pass 無訊號）" },
     ],
   },
 
@@ -56,6 +65,11 @@ var D = [
       { l: "15:00", v: "🍽️ Hokitika 午晚餐" },
       { l: "18:00", v: "抵達 Fox Glacier" },
     ],
+    info: [
+      { icon: "🏨", label: "Rainforest Motel ✅", sub: "Fox Glacier｜NZD 387.21 已付" },
+      { icon: "⛽", label: "NPD Hokitika (24hr)", url: "https://www.google.com/maps/place/?q=place_id:ChIJG803aGsvL20Rr9wUBaK2jsA", sub: "必加滿油！過後油價貴 20–30分/L" },
+      { icon: "📡", label: "今晚下載離線地圖", sub: "Fox Glacier → Wanaka 全段（明天約4hr全程無訊號）" },
+    ],
   },
 
   {
@@ -78,6 +92,12 @@ var D = [
       { l: "", v: "👨‍👩‍👧 不參加可去 Lake Matheson 鏡湖散步" },
       { l: "14:00", v: "🚗 6 號公路南下 Wanaka（沿途超美）" },
       { l: "18:30", v: "🍽️ Kai Kikokiko 慢烤肉 或 Burrito Craft" },
+    ],
+    info: [
+      { icon: "🧊", label: "Fox Glacier Guiding ✅", sub: "08:30 集合｜約 4hr｜爸媽可去 Lake Matheson" },
+      { icon: "🏨", label: "Marina Terrace", url: "https://www.google.com/maps/place/?q=place_id:ChIJS-a9UuFP1akRWCOq35ngxgs", sub: "65 Lakeside Rd, Wanaka" },
+      { icon: "🍽️", label: "Kai Kikokiko", url: "https://www.google.com/maps/place/?q=place_id:ChIJBZbXK1NP1akROjJMgx6Wms0", sub: "16–20:30，週三休" },
+      { icon: "⛽", label: "Haast 加油站（應急）", sub: "油量低於半箱才補，價格偏高" },
     ],
   },
 
@@ -103,6 +123,10 @@ var D = [
       { l: "下午", v: "休息 / Wanaka 湖畔散步" },
       { l: "18:00", v: "🍽️ Bistro Gentil 晚餐", c: "hl" },
     ],
+    info: [
+      { icon: "🏨", label: "Marina Terrace（續住）", url: "https://www.google.com/maps/place/?q=place_id:ChIJS-a9UuFP1akRWCOq35ngxgs" },
+      { icon: "🍽️", label: "Bistro Gentil ✅", url: "https://maps.app.goo.gl/dLt2wKLjP1irvciu6", sub: "18:00 晚餐" },
+    ],
   },
 
   {
@@ -124,6 +148,11 @@ var D = [
       { l: "12:30", v: "🛒 超市採購（有亞洲超市）" },
       { l: "15:00", v: "Check-in 放行李" },
       { l: "16:00", v: "🚡 Gondola 纜車 + Luge 溜溜車 🌅", c: "hl" },
+    ],
+    info: [
+      { icon: "🏨", label: "LakeRidge Queenstown", url: "https://www.google.com/maps/place/?q=place_id:ChIJ80FKHn4d1akROuKJJyeUkpY", sub: "51 Thompson St｜Check-in 15:00" },
+      { icon: "⛽", label: "NPD Frankton 加滿油", url: "https://www.google.com/maps/place/?q=place_id:ChIJpZLBPFEe1akRqKakG-EnnmY", sub: "比 Wanaka 便宜約 10分/L" },
+      { icon: "🍔", label: "Fergburger ⚠️ 需電話預約" },
     ],
   },
 
@@ -147,6 +176,10 @@ var D = [
       { l: "12:00", v: "🍽️ 午餐" },
       { l: "下午", v: "🏘️ Arrowtown 或 Glenorchy（擇一）" },
     ],
+    info: [
+      { icon: "🚤", label: "Shotover Jet ✅ 已付款", sub: "10:00 出發" },
+      { icon: "🏨", label: "LakeRidge Queenstown（續住）", url: "https://www.google.com/maps/place/?q=place_id:ChIJ80FKHn4d1akROuKJJyeUkpY" },
+    ],
   },
 
   {
@@ -169,6 +202,12 @@ var D = [
       { l: "10:00", v: "🥾 Queenstown Hill 輕鬆步道" },
       { l: "下午", v: "🛍️ Queenstown Mall 購物" },
       { l: "17:30", v: "🍽️ Rata Restaurant 晚餐（5 位）", c: "hl" },
+    ],
+    info: [
+      { icon: "🍽️", label: "Rata Restaurant ✅", sub: "Ref: 69693936｜📞 +643-4429393｜⚠️ 12hr 內取消 = $100/人" },
+      { icon: "🏨", label: "LakeRidge Queenstown（續住）", url: "https://www.google.com/maps/place/?q=place_id:ChIJ80FKHn4d1akROuKJJyeUkpY" },
+      { icon: "☕", label: "Odd Saint 早餐", url: "https://www.google.com/maps/place/?q=place_id:ChIJA8EbBLEd1akRJbkD-mmn_lA" },
+      { icon: "📡", label: "今晚下載離線地圖", sub: "Queenstown → Mt. Cook 全段（Lindis Pass 斷訊）" },
     ],
   },
 
@@ -196,6 +235,11 @@ var D = [
       { l: "14:30", v: "🥾 Hooker Valley Track（來回 3hr）", c: "hl" },
       { l: "晚上", v: "🌟 Mt. Cook 暗空保護區看星星" },
     ],
+    info: [
+      { icon: "🏨", label: "The Lakes Motel Twizel", url: "https://www.google.com/maps/place/?q=place_id:ChIJEcBsq-IfK20RxoNUCErWkF8", sub: "10 MacKenzie Dr, Twizel｜復活節 Mt. Cook 已滿" },
+      { icon: "⛽", label: "McKeown 24/7 Twizel", url: "https://www.google.com/maps/place/?q=place_id:ChIJh9wxRfwfK20RIodAfo9kTco", sub: "24hr 自助，價格低｜Mt. Cook 無加油站" },
+      { icon: "🍒", label: "Jackson Orchard", url: "https://www.google.com/maps/search/Jackson+Orchard+Cromwell", sub: "Cromwell 果園，冰淇淋必吃" },
+    ],
   },
 
   {
@@ -218,6 +262,10 @@ var D = [
       { l: "13:30", v: "🚗 前往 Lake Tekapo" },
       { l: "下午", v: "⛪ 善牧人教堂 + 湖邊散步" },
       { l: "晚上", v: "🌟 暗空保護區觀星 — 世界級星空！" },
+    ],
+    info: [
+      { icon: "🛶", label: "Glacier Explorers ✅ 已付款", url: "https://maps.app.goo.gl/9XM1K45QgKTkXUQo7", sub: "09:45 出發" },
+      { icon: "🏨", label: "Great Scott", url: "https://www.google.com/maps/place/?q=place_id:ChIJw0djCgR1K20RoS6UG2eGfzg", sub: "34 Scott St, Lake Tekapo" },
     ],
   },
 
@@ -246,6 +294,11 @@ var D = [
       { l: "下午", v: "湖邊放空 / 自由活動" },
       { l: "21:45", v: "🌟 變色龍觀星團 — 專業導覽觀星", c: "hl" },
     ],
+    info: [
+      { icon: "🌟", label: "變色龍觀星團 ✅", sub: "21:45 場次｜已報名" },
+      { icon: "🏨", label: "Great Scott（續住）", url: "https://www.google.com/maps/place/?q=place_id:ChIJw0djCgR1K20RoS6UG2eGfzg" },
+      { icon: "📡", label: "今晚下載離線地圖", sub: "Lake Tekapo → Christchurch（Burkes Pass 小段斷訊）" },
+    ],
   },
 
   {
@@ -271,6 +324,9 @@ var D = [
       { l: "下午", v: "Christchurch 市區散步" },
       { l: "晚上", v: "🧳 收拾打包" },
     ],
+    info: [
+      { icon: "🏨", label: "Bella Vista Motel", url: "https://www.google.com/maps/place/?q=place_id:ChIJY5Xl3y2KMW0Rh4_fGGaOsY0", sub: "193 Bealey Ave, Christchurch" },
+    ],
   },
 
   {
@@ -288,6 +344,12 @@ var D = [
       { l: "13:00", v: "✈️ NZ554 → Auckland (到機場，15:00 飛奧克蘭)" },
       { l: "16:00", v: "JetPark Check-in（免費機場 Shuttle）" },
     ],
+    info: [
+      { icon: "⛽", label: "BP Russley Rd（還車前加滿）", url: "https://www.google.com/maps/place/?q=place_id:ChIJXVTwYK70MW0RzEiO2fE705w", sub: "24hr，近機場，海外卡可用" },
+      { icon: "🚗", label: "Ezi 還車 11:30", sub: "CHC Airport，Novotel 後方停車場" },
+      { icon: "✈️", label: "NZ554 Ref: 2DI6QH", sub: "13:00 CHC → AKL" },
+      { icon: "🏨", label: "JetPark Auckland Airport", url: "https://www.google.com/maps/place/?q=place_id:ChIJfU5sqJlPDW0RR8ciVCBjIOw", sub: "63 Westney Rd, Māngere｜免費 Shuttle" },
+    ],
   },
 
   {
@@ -303,6 +365,9 @@ var D = [
     det: [
       { l: "09:40", v: "✈️ NZ77 Auckland → Taipei（11.5hr）" },
       { l: "17:05", v: "🏠 抵達桃園 — 歡迎回家！" },
+    ],
+    info: [
+      { icon: "✈️", label: "NZ77 Ref: NN8DLH", sub: "09:40 AKL → TPE（11.5hr）" },
     ],
   },
 ];
@@ -407,6 +472,32 @@ chapters.forEach(function (ch, ci) {
       starsH = '<div class="stars">' + s + "</div>";
     }
 
+    var infoPanel = "";
+    if (day.info && day.info.length) {
+      infoPanel =
+        '<div class="day-info-panel">' +
+        day.info
+          .map(function (item) {
+            var content = item.url
+              ? '<a href="' + item.url + '" target="_blank" rel="noopener">' + item.label + '</a>'
+              : item.label;
+            return (
+              '<div class="info-row">' +
+              '<span class="info-icon">' + item.icon + "</span>" +
+              '<div class="info-content">' +
+              '<div class="info-label">' + content + "</div>" +
+              (item.sub ? '<div class="info-sub">' + item.sub + "</div>" : "") +
+              "</div></div>"
+            );
+          })
+          .join("") +
+        "</div>";
+    }
+    var toggleBtn =
+      day.info && day.info.length
+        ? '<button class="day-toggle" aria-label="展開詳細資訊"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>'
+        : "";
+
     html +=
       '<div class="day-entry type-' +
       day.type +
@@ -429,15 +520,27 @@ chapters.forEach(function (ch, ci) {
       (day.loc ? '<div class="day-loc">' + day.loc + "</div>" : "") +
       (day.drv ? '<div class="day-drive">🚗 約 ' + day.drv + "</div>" : "") +
       "</div>" +
+      toggleBtn +
       "</div>" +
       heroA +
       (tl ? '<div class="day-tl">' + tl + "</div>" : "") +
       (tags ? '<div class="day-tags">' + tags + "</div>" : "") +
+      infoPanel +
       "</div>";
   });
 
   sec.innerHTML = html;
   mainEl.appendChild(sec);
+});
+
+/* ── Info panel toggle ── */
+mainEl.addEventListener("click", function (e) {
+  var toggle = e.target.closest(".day-toggle");
+  if (toggle) {
+    e.stopPropagation();
+    var entry = toggle.closest(".day-entry");
+    entry.classList.toggle("open");
+  }
 });
 
 /* ── Nav indicator ── */

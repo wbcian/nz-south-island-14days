@@ -650,6 +650,102 @@ body {
   height: 1px;
 }
 
+/* ── Toggle button ── */
+.day-toggle {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: color-mix(in srgb, var(--ch-color) 10%, transparent);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ch-color);
+  transition: background 0.2s, transform 0.3s;
+  align-self: flex-start;
+  margin-top: 2px;
+}
+.day-toggle svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s;
+}
+.day-entry.open .day-toggle svg {
+  transform: rotate(180deg);
+}
+.day-toggle:active {
+  transform: scale(0.9);
+}
+
+/* ── Info panel (expandable) ── */
+.day-info-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  border-top: 0 solid var(--card-b);
+  margin: 0 16px;
+}
+.day-entry.open .day-info-panel {
+  max-height: 600px;
+  border-top-width: 1px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.info-row {
+  display: flex;
+  gap: 10px;
+  padding: 6px 0;
+  align-items: flex-start;
+}
+.info-icon {
+  flex-shrink: 0;
+  font-size: 15px;
+  width: 22px;
+  text-align: center;
+  line-height: 1.5;
+}
+.info-content {
+  flex: 1;
+  min-width: 0;
+}
+.info-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dark);
+  line-height: 1.5;
+}
+.info-label a {
+  color: var(--hl);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.info-sub {
+  font-size: 12px;
+  color: var(--light);
+  line-height: 1.5;
+  margin-top: 1px;
+}
+
+/* Stargazing card overrides for info panel */
+.type-stargazing .info-label {
+  color: #e8e4f0;
+}
+.type-stargazing .info-label a {
+  color: #c8a0ff;
+}
+.type-stargazing .info-sub {
+  color: #8885aa;
+}
+.type-stargazing .day-toggle {
+  background: rgba(100, 80, 200, 0.15);
+  color: #b0a8e8;
+}
+.type-stargazing .day-info-panel {
+  border-color: rgba(100, 90, 180, 0.2);
+}
+
 /* ── Footer ── */
 .ftr {
   max-width: 640px;
