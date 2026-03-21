@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>紐西蘭南島 14 天行程</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="progress-bar" id="pbar"></div>
+
+    <section class="hero">
+      <h1 class="hero-title">紐西蘭南島</h1>
+      <p class="hero-sub">2026.03.28 – 04.10</p>
+
+      <div class="route-map">
+        <img
+          src="img/route-map.png"
+          alt="紐西蘭南島自駕路線圖"
+        />
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-item">
+          <div class="stat-num" data-target="1335">0</div>
+          <div class="stat-label">公里</div>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat-item">
+          <div class="stat-num" data-target="14">0</div>
+          <div class="stat-label">天</div>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat-item">
+          <div class="stat-num" data-target="8">0</div>
+          <div class="stat-label">城市</div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="nav-wrap" id="navW">
+      <button class="nav-tab active" data-ch="0">序</button>
+      <button class="nav-tab" data-ch="1">西海岸</button>
+      <button class="nav-tab" data-ch="2">皇后鎮</button>
+      <button class="nav-tab" data-ch="3">山湖</button>
+      <button class="nav-tab" data-ch="4">歸</button>
+      <div class="nav-ind" id="navInd"></div>
+    </nav>
+
+    <main id="main"></main>
+
+    <footer class="ftr">
+      <div class="note-box">
+        <h4>📌 出發前提醒</h4>
+        <ul>
+          <li>護照效期需超過 2026/10/10</li>
+          <li>NZeTA 電子旅行授權：已完成（綁護照）</li>
+          <li>NZTD 旅客聲明：出發前 24hr 內填寫</li>
+          <li>南島天氣多變，帶防水外套、洋蔥式穿搭</li>
+          <li>紐西蘭靠左行駛（右駕），圓環讓右方來車</li>
+        </ul>
+      </div>
+      <div class="legend">
+        <span class="tag tag-n">自然景觀</span
+        ><span class="tag tag-a">活動體驗</span
+        ><span class="tag tag-f">美食推薦</span
+        ><span class="tag tag-c">人文歷史</span
+        ><span class="tag tag-s">星空觀測</span>
+      </div>
+      <div class="ftr-txt">
+        南島逆時針環狀路線<br />Christchurch 出發 & 回程
+      </div>
+    </footer>
+
+    <button class="btt" id="btt" aria-label="回到頂部">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M18 15l-6-6-6 6" />
+      </svg>
+    </button>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
