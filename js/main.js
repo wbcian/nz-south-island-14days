@@ -29,7 +29,7 @@ var D = [
       { l: "10:10", v: "抵達 Auckland" },
       { l: "13:00", v: "✈️ NZ543 轉機飛 Christchurch" },
       { l: "14:25", v: "抵達 Christchurch" },
-      { l: "17:00", v: "取車、前往飯店" },
+      { l: "15:30", v: "取車、前往飯店" },
       { l: "晚上", v: "🍽️ Riverside Market 或超市採買" },
     ],
   },
@@ -53,7 +53,6 @@ var D = [
       { l: "07:30", v: "出發！今天全程最長車程日 🚗" },
       { l: "09:00", v: "🪨 Castle Hill 壯觀巨石群（1.5–2hr）" },
       { l: "11:45", v: "🏔️ Arthur's Pass 國家公園" },
-      { l: "13:00", v: "📷 Otira Viaduct 觀景台" },
       { l: "15:00", v: "🍽️ Hokitika 午晚餐" },
       { l: "18:00", v: "抵達 Fox Glacier" },
     ],
@@ -121,7 +120,6 @@ var D = [
       { t: "Willow Tree", c: "n" },
     ],
     det: [
-      { l: "09:30", v: "🌳 Tekapo Willow Tree 「最孤獨的樹」" },
       { l: "11:30", v: "🍔 Fergburger — 皇后鎮必吃漢堡！", c: "hl" },
       { l: "12:30", v: "🛒 超市採購（有亞洲超市）" },
       { l: "15:00", v: "Check-in 放行李" },
@@ -287,7 +285,7 @@ var D = [
     tags: [],
     det: [
       { l: "上午", v: "Christchurch 最後閒逛" },
-      { l: "13:00", v: "✈️ NZ554 → Auckland" },
+      { l: "13:00", v: "✈️ NZ554 → Auckland (到機場，15:00 飛奧克蘭)" },
       { l: "16:00", v: "JetPark Check-in（免費機場 Shuttle）" },
     ],
   },
