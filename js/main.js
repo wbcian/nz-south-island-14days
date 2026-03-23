@@ -276,6 +276,7 @@ var D = [
       { t: "🥾 QT Hill", c: "a" },
       { t: "🍽️ Rata Restaurant", c: "f" },
       { t: "🛍️ 購物", c: "c" },
+      { t: "🌌 極光機會", c: "s" },
     ],
     det: [
       { l: "08:30", v: "☕ Odd Saint 早餐" },
@@ -305,6 +306,11 @@ var D = [
         label: "今晚下載離線地圖",
         sub: "Queenstown → Mt. Cook 全段（Lindis Pass 斷訊）",
       },
+      {
+        icon: "🌌",
+        label: "南極光觀測機會",
+        sub: "2026 太陽極大期 + 3月春分效應，Queenstown 緯度 -45° 是紐西蘭最佳極光觀測點之一。晚上留意南方天空！",
+      },
     ],
   },
 
@@ -322,6 +328,7 @@ var D = [
       { t: "🍒 Cromwell 水果", c: "f" },
       { t: "🐟 Salmon", c: "f" },
       { t: "🥾 Hooker Valley", c: "a" },
+      { t: "🌌 極光機會", c: "s" },
     ],
     det: [
       {
@@ -330,7 +337,7 @@ var D = [
       },
       { l: "12:30", v: "🐟 High Country Salmon 生鮭魚午餐", c: "hl" },
       { l: "14:30", v: "🥾 Hooker Valley Track（來回 3hr）", c: "hl" },
-      { l: "晚上", v: "🌟 Mt. Cook 暗空保護區看星星" },
+      { l: "晚上", v: "🌟 Mt. Cook 暗空保護區看星星 / 🌌 留意南極光！" },
     ],
     info: [
       {
@@ -357,6 +364,11 @@ var D = [
         url: "https://www.google.com/maps/search/?api=1&query=Jackson+Orchard+Cromwell",
         sub: "Cromwell 果園，冰淇淋必吃",
       },
+      {
+        icon: "🌌",
+        label: "南極光觀測機會",
+        sub: "Aoraki Mackenzie 是全球最大國際暗天保護區，極低光害。今晚看星星時留意南方地平線的綠光！",
+      },
     ],
   },
 
@@ -374,12 +386,13 @@ var D = [
       { t: "🛶 Glacier Explorers", c: "a" },
       { t: "⛪ 牧人教堂", c: "c" },
       { t: "🌟 星空", c: "s" },
+      { t: "🌌 極光機會", c: "s" },
     ],
     det: [
       { l: "09:45", v: "🛶 Glacier Explorers 冰川船！", c: "hl" },
       { l: "13:30", v: "🚗 前往 Lake Tekapo" },
       { l: "下午", v: "⛪ 牧人教堂 + 湖邊散步" },
-      { l: "晚上", v: "🌟 暗空保護區觀星 — 世界級星空！" },
+      { l: "晚上", v: "🌟 暗空保護區觀星 — 世界級星空！🌌 有機會看到南極光" },
     ],
     info: [
       {
@@ -393,6 +406,11 @@ var D = [
         label: "Great Scott",
         url: "https://www.google.com/maps/search/?api=1&query=Great+Scott+Lake+Tekapo&query_place_id=ChIJw0djCgR1K20RoS6UG2eGfzg",
         sub: "34 Scott St, Lake Tekapo",
+      },
+      {
+        icon: "🌌",
+        label: "南極光觀測機會",
+        sub: "Lake Tekapo 位於 Aoraki Mackenzie 暗天保護區，是紐西蘭最容易看到南極光的地方之一。2026 太陽極大期 + 春分效應，機率更高！",
       },
     ],
   },
@@ -411,6 +429,7 @@ var D = [
       { t: "🔭 Mt. John", c: "s" },
       { t: "☕ Astro Cafe", c: "f" },
       { t: "🌟 觀星 21:45", c: "s" },
+      { t: "🌌 極光機會", c: "s" },
     ],
     det: [
       { l: "09:30", v: "🚶 Peninsula Walkway 半島步道" },
@@ -424,6 +443,11 @@ var D = [
     ],
     info: [
       { icon: "🌟", label: "變色龍觀星團 ✅", sub: "21:45 場次｜已報名" },
+      {
+        icon: "🌌",
+        label: "今晚是最佳極光觀測夜！",
+        sub: "Lake Tekapo 暗天保護區 + 觀星團專業導覽。太陽極大期（Solar Maximum）持續至 2026，加上 3–4 月春分地磁增強效應（Russell-McPherron effect），南極光出現機率為十年最高。觀星時請導覽員協助辨識南方天際極光！",
+      },
       {
         icon: "🏨",
         label: "Great Scott（續住）",
