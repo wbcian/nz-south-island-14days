@@ -123,9 +123,7 @@
         loadScript(ver);
       });
 
-      // Auto-reload when tab becomes visible and version has changed
-      document.addEventListener("visibilitychange", function () {
-        if (document.visibilityState !== "visible") return;
+      function checkAndReload() {
         fetchVersion(function (ver) {
           if (!ver) return;
           var prev = sessionStorage.getItem(KEY);
@@ -134,7 +132,15 @@
             window.location.reload();
           }
         });
+      }
+
+      // Auto-reload when tab becomes visible and version has changed
+      document.addEventListener("visibilitychange", function () {
+        if (document.visibilityState === "visible") checkAndReload();
       });
+
+      // Poll every 3 minutes
+      setInterval(checkAndReload, 3 * 60 * 1000);
     })();
     </script>
   </body>
