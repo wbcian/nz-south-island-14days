@@ -51,11 +51,6 @@ var D = [
         url: "https://www.google.com/maps/search/?api=1&query=Riverside+Market+Christchurch",
         sub: "河邊市集，多元美食",
       },
-      {
-        icon: "📡",
-        label: "今晚下載離線地圖",
-        sub: "Christchurch → Hokitika（明天 Arthur's Pass 無訊號）",
-      },
     ],
   },
 
@@ -92,11 +87,6 @@ var D = [
         label: "NPD Hokitika (24hr)",
         url: "https://www.google.com/maps/search/?api=1&query=NPD+Hokitika&query_place_id=ChIJG803aGsvL20Rr9wUBaK2jsA",
         sub: "必加滿油！過後油價貴 20–30分/L",
-      },
-      {
-        icon: "📡",
-        label: "今晚下載離線地圖",
-        sub: "Fox Glacier → Wanaka 全段（明天約4hr全程無訊號）",
       },
     ],
   },
@@ -302,11 +292,6 @@ var D = [
         url: "https://www.google.com/maps/search/?api=1&query=Odd+Saint+Queenstown&query_place_id=ChIJA8EbBLEd1akRJbkD-mmn_lA",
       },
       {
-        icon: "📡",
-        label: "今晚下載離線地圖",
-        sub: "Queenstown → Mt. Cook 全段（Lindis Pass 斷訊）",
-      },
-      {
         icon: "🌌",
         label: "南極光觀測推薦點",
         sub: "最佳時間 22:00–02:00，面朝南方天空",
@@ -506,11 +491,6 @@ var D = [
         label: "Astro Cafe",
         url: "https://www.google.com/maps/search/?api=1&query=Astro+Cafe+Mt+John+Lake+Tekapo",
         sub: "Mt. John 山頂，景色絕美",
-      },
-      {
-        icon: "📡",
-        label: "今晚下載離線地圖",
-        sub: "Lake Tekapo → Christchurch（Burkes Pass 小段斷訊）",
       },
     ],
   },
