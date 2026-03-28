@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>紐西蘭自駕筆記</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;900&family=Noto+Serif+TC:wght@700;900&display=swap" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="tips-page">
+
+    <header class="tips-header" id="tipsHeader">
+      <a href="index.html" class="tips-back" aria-label="返回行程">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M15 18l-6-6 6-6"/>
+        </svg>
+      </a>
+      <h1 class="tips-title">紐西蘭自駕筆記</h1>
+    </header>
+
+    <div class="tips-pills-wrap">
+      <div class="tips-pills" id="tips-pills"></div>
+    </div>
+
+    <main class="tips-main" id="tips-main"></main>
+
+    <footer class="tips-footer">
+      <a href="index.html" class="tips-footer-link">← 返回 14 天行程</a>
+      <div class="tips-footer-note">此頁面載入後可離線閱讀</div>
+    </footer>
+
+    <button class="btt tips-btt" id="btt" aria-label="回到頂部">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M18 15l-6-6-6 6" />
+      </svg>
+    </button>
+
+    <script>
+    (function () {
+      var KEY = "nz-trip-ver";
+
+      function fetchVersion(cb) {
+        fetch("version.json?_=" + Date.now(), { cache: "no-store" })
+          .then(function (r) { return r.json(); })
+          .then(function (d) { cb(d.v); })
+          .catch(function () { cb(null); });
+      }
+
+      function loadScript(ver) {
+        var q = ver ? "?v=" + ver : "";
+        var css = document.querySelector('link[href*="style.css"]');
+        if (css) css.href = "css/style.css" + q;
+        var s = document.createElement("script");
+        s.src = "js/tips.js" + q;
+        document.body.appendChild(s);
+      }
+
+      fetchVersion(function (ver) {
+        if (ver) sessionStorage.setItem(KEY, ver);
+        loadScript(ver);
+      });
+
+      function checkAndReload() {
+        fetchVersion(function (ver) {
+          if (!ver) return;
+          var prev = sessionStorage.getItem(KEY);
+          if (prev && prev !== ver) {
+            sessionStorage.setItem(KEY, ver);
+            window.location.reload();
+          }
+        });
+      }
+
+      document.addEventListener("visibilitychange", function () {
+        if (document.visibilityState === "visible") checkAndReload();
+      });
+
+      setInterval(checkAndReload, 3 * 60 * 1000);
+    })();
+    </script>
+  </body>
+</html>
