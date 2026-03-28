@@ -63,9 +63,9 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 100%;
   scroll-behavior: smooth;
-  scroll-padding-top: calc(var(--nav-h) + 8px);
+  scroll-padding-top: calc(var(--nav-h) + 16px);
 }
 body {
   background: var(--bg);
@@ -122,7 +122,7 @@ body {
 
 .hero-title {
   font-family: var(--serif);
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 900;
   text-align: center;
   line-height: 1.35;
@@ -132,7 +132,7 @@ body {
   animation: fadeUp 0.8s 0.3s forwards;
 }
 .hero-sub {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: var(--mid);
   text-align: center;
   margin-bottom: 20px;
@@ -178,12 +178,12 @@ body {
 }
 .stat-num {
   font-family: var(--serif);
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 900;
   color: var(--dark);
 }
 .stat-label {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: var(--light);
   margin-top: 2px;
 }
@@ -205,7 +205,7 @@ body {
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--card-b);
-  height: var(--nav-h);
+  min-height: var(--nav-h);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -213,7 +213,7 @@ body {
 }
 .nav-tab {
   position: relative;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
   color: var(--light);
   padding: 12px 14px;
@@ -272,7 +272,7 @@ body {
 }
 .ch-num {
   font-family: var(--sans);
-  font-size: 11px;
+  font-size: 0.6875rem;
   font-weight: 700;
   color: var(--ch-color);
   letter-spacing: 2px;
@@ -294,19 +294,19 @@ body {
 }
 .ch-title {
   font-family: var(--serif);
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 900;
   line-height: 1.25;
   letter-spacing: -0.5px;
 }
 .ch-sub {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: var(--light);
   margin-left: 6px;
 }
 .ch-route {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: var(--light);
   padding: 0 20px 16px;
   line-height: 1.6;
@@ -365,7 +365,7 @@ body {
   cursor: pointer;
 }
 .day-badge {
-  font-size: 11px;
+  font-size: 0.6875rem;
   font-weight: 700;
   color: #fff;
   background: var(--ch-color);
@@ -381,12 +381,12 @@ body {
   min-width: 0;
 }
 .day-title {
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 700;
   line-height: 1.4;
 }
 .day-loc {
-  font-size: 13px;
+  font-size: 0.8125rem;
   color: var(--light);
   margin-top: 3px;
   line-height: 1.5;
@@ -394,7 +394,7 @@ body {
 .day-drive {
   display: inline-flex;
   align-items: center;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 600;
   color: var(--ch5);
   background: color-mix(in srgb, var(--ch5) 12%, transparent);
@@ -410,7 +410,7 @@ body {
   background: linear-gradient(135deg, color-mix(in srgb, var(--ch-color) 10%, transparent), color-mix(in srgb, var(--ch-color) 4%, transparent));
   border-left: 3px solid var(--ch-color);
   border-radius: 0 12px 12px 0;
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 700;
   color: var(--dark);
   line-height: 1.5;
@@ -440,16 +440,16 @@ body {
   display: flex;
   gap: 12px;
   padding: 6px 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.7;
   position: relative;
 }
 .tl-time {
-  min-width: 46px;
+  min-width: fit-content;
   font-weight: 600;
   color: var(--light);
   flex-shrink: 0;
-  font-size: 13px;
+  font-size: 0.8125rem;
   position: relative;
   padding-left: 14px;
 }
@@ -501,7 +501,7 @@ body {
   padding: 4px 16px 16px;
 }
 .tag {
-  font-size: 12px;
+  font-size: 0.75rem;
   padding: 5px 12px;
   border-radius: 20px;
   font-weight: 600;
@@ -542,7 +542,7 @@ body {
 
 /* ── Day type: long drive ── */
 .type-longdrive .day-drive {
-  font-size: 13px;
+  font-size: 0.8125rem;
   padding: 5px 14px;
   background: color-mix(in srgb, var(--ch5) 16%, transparent);
   border-radius: 12px;
@@ -563,7 +563,7 @@ body {
   gap: 8px;
 }
 .type-leisure .tag {
-  font-size: 13px;
+  font-size: 0.8125rem;
   padding: 5px 14px;
 }
 .type-leisure::before {
@@ -689,7 +689,7 @@ body {
   margin: 0 16px;
 }
 .day-entry.open .day-info-panel {
-  max-height: 600px;
+  max-height: 800px;
   border-top-width: 1px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -702,7 +702,7 @@ body {
 }
 .info-icon {
   flex-shrink: 0;
-  font-size: 15px;
+  font-size: 0.9375rem;
   width: 22px;
   text-align: center;
   line-height: 1.5;
@@ -712,7 +712,7 @@ body {
   min-width: 0;
 }
 .info-label {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
   color: var(--dark);
   line-height: 1.5;
@@ -723,7 +723,7 @@ body {
   text-underline-offset: 2px;
 }
 .info-sub {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: var(--light);
   line-height: 1.5;
   margin-top: 1px;
@@ -759,7 +759,7 @@ body {
   border-radius: 16px;
   padding: 20px;
   margin-top: 40px;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: var(--mid);
   line-height: 1.8;
   box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 6px 20px rgba(0,0,0,0.03);
@@ -777,7 +777,7 @@ body {
   opacity: 0.7;
 }
 .note-box h4 {
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 700;
   color: var(--dark);
   margin-bottom: 10px;
@@ -797,7 +797,7 @@ body {
 }
 .ftr-txt {
   text-align: center;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: var(--light);
   margin: 20px 0 0;
   line-height: 1.7;
@@ -895,13 +895,13 @@ body {
 /* ── Responsive ── */
 @media (min-width: 600px) {
   .hero-title {
-    font-size: 36px;
+    font-size: 2.25rem;
   }
   .ch-title {
-    font-size: 32px;
+    font-size: 2rem;
   }
   .nav-tab {
-    font-size: 15px;
+    font-size: 0.9375rem;
     padding: 12px 20px;
   }
   .day-entry {
@@ -910,13 +910,13 @@ body {
 }
 @media (max-width: 374px) {
   .nav-tab {
-    font-size: 12px;
+    font-size: 0.75rem;
     padding: 12px 7px;
   }
   .hero-title {
-    font-size: 26px;
+    font-size: 1.625rem;
   }
   .ch-title {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 }
